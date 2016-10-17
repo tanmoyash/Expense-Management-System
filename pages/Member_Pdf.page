@@ -1,0 +1,20 @@
+<apex:page standardController="Member__c" renderAs="pdf">
+
+  <h1> Member Details </h1>
+            <body>
+            <table border="2"  width="600px" Class="center" >
+              <tr>
+                 <td> Name </td>
+                 <td>{!Member__c.First_Name__c} {!Member__c.Last_Name__c}</td>
+              </tr>
+              <tr>
+                    <td> Email </td>
+                    <td>{!Member__c.Email_Id__c} </td>
+              </tr>
+              <tr>
+                    <td> Contact No </td>
+                    <td>{!Member__c.Contact_No__c}</td>
+              </tr>
+            </table>      
+        </body>
+</apex:page>
